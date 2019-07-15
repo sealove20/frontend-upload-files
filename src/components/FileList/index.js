@@ -12,7 +12,11 @@ export default function FileList({ files, onDelete }) {
           <FileInfo>
             <Preview src={uploadedFile.preview} />
             <div>
-              <strong>{uploadedFile.name}</strong>
+              <strong>
+                {uploadedFile.name.length < 20
+                  ? uploadedFile.name
+                  : `${uploadedFile.name.substring(1, 30)} ...`}
+              </strong>
               <span>
                 {uploadedFile.readableSize}
                 {!!uploadedFile.url && (
