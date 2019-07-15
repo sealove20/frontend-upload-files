@@ -15,7 +15,7 @@ export default function FileList({ files, onDelete }) {
               <strong>
                 {uploadedFile.name.length < 20
                   ? uploadedFile.name
-                  : `${uploadedFile.name.substring(1, 30)} ...`}
+                  : `${uploadedFile.name.substring(1, 15)} ...`}
               </strong>
               <span>
                 {uploadedFile.readableSize}
