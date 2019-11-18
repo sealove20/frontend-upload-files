@@ -33,7 +33,7 @@ export const FileInfo = styled.div`
         background: transparent;
         color: #e57878;
         margin-left: 5px;
-        cursos: pointer;
+        cursor: pointer;
       }
     }
   }
